@@ -155,14 +155,3 @@ This task demonstrates how to build a modern card component with:
 * Interactive hover effects
 
 The implementation improves user experience by making the UI visually engaging and responsive across devices.
-
----
-
-## 🚀 Future Improvements
-
-* Add dynamic data using JavaScript or React
-* Include rating, price, or badges
-* Enhance animations using libraries like Framer Motion
-* Add accessibility improvements
-
----

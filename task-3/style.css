@@ -56,6 +56,7 @@ footer{
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
+  padding-top: 10px;
 }
 
 .card__container {
@@ -66,6 +67,7 @@ footer{
 }
 
 .card__article {
+  padding-top: 50px;
   position: relative;
   overflow: hidden;
   
@@ -181,6 +183,12 @@ footer{
     overflow: hidden;
   }
 }
+@media (max-width: 768px){
+    .card__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
 
 @media (max-width: 550px){
     header{
@@ -208,9 +216,25 @@ footer{
     footer{
         font-size: 10px;
     }
-    .container {
-        padding-block: 3rem;
-        width: 70%;
+    .card__img{
+      width:190px;
+    }
+    .card__container {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+    .card__data {
+      width: 120px;
+    }
+    .card__description {
+      font-size: 10px;
+    }
+    .card__title {
+      font-size: 14px;
+    }
+    .card__button {
+      font-size: 10px;
+      padding: 3px 7px;
     }
 }
 @media (max-width: 350px){
@@ -249,5 +273,22 @@ footer{
     font-size:6px;
     padding-top: 5px;
     padding-bottom: 5px;
+    }
+    .card__img{
+      width:160px;
+    }
+
+    .card__data {
+      width: 90px;
+    }
+    .card__description {
+      font-size: 8px;
+    }
+    .card__title {
+      font-size: 11px;
+    }
+    .card__button {
+      font-size: 10px;
+      padding: 2px 5px;
     }
 }
