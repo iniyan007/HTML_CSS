@@ -197,4 +197,3 @@ This ensures the submenu fades in and slides down smoothly.
 ## Conclusion
 
 This task demonstrates how to build a fully functional navigation bar with a dropdown submenu using only HTML and CSS. The implementation ensures smooth interaction, visual consistency, and responsiveness across devices without relying on JavaScript.
-

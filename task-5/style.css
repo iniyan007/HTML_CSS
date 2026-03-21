@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/landscape.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.2);
+}
+.wrapper a{
+    text-decoration: none;
+    color: #585858;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.modelbox{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.475);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.modelbox:target .model-content {
+    transform: scale(1);
+}
+.modelbox:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.model-content{
+    position: relative;
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+a{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #585858;
+    text-decoration: none;  
+}
