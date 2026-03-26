@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: #07141d;
+}
+#accordion{
+    margin: 100px auto;
+    width: 600px;
+}
+#accordion li{
+    list-style: none;
+    width: 100%;
+    background-color: #fffffff1;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+#accordion li label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #c20000;
+    cursor: pointer;
+    padding: 10px;
+}
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: black;
+    transition: 0.5s ease;
+}
+#accordion input[type="checkbox"]{
+    display: none;
+}
+#accordion .content{
+    line-height: 26px;
+    max-height: 0;
+    padding: 0px 10px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+#accordion input[type="checkbox"]:checked ~ .content{
+    max-height: 400px;
+}
+#accordion input[type="checkbox"]:checked ~ label span{
+    transform: rotate(0deg);
+    transition: 0.5s ease;
+}
