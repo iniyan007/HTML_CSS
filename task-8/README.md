@@ -29,7 +29,7 @@ An **accordion** is a UI component that allows users to toggle the visibility of
 <div class="content">...</div>
 ```
 
-### ✔ Key Concept:
+### ✔ Key Concept
 
 * Clicking the label toggles the checkbox state.
 * The checkbox state is used to control content visibility via CSS.
