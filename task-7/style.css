@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/landscape.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    position: relative;
+}
+.container .wrapper{
+    width:50vw;
+    height: 70vh;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.container #image-1{
+    background-image: url(images/cherry.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container #image-2{
+    background-image: url(images/kiwi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container #image-3{
+    background-image: url(images/orange.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container #image-4{
+    background-image: url(images/papaya.jpg);
+    background-position: center;
+    background-size: cover;
+}
+input{
+    display: none;
+}
+.container .button-holder{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider-image-1:checked ~ .wrapper .wrapper-holder{
+    transform: translateX(0%);
+}
+
+#slider-image-2:checked ~ .wrapper .wrapper-holder{
+    transform: translateX(-100%);
+}
+
+#slider-image-3:checked ~ .wrapper .wrapper-holder{
+    transform: translateX(-200%);
+}
+
+#slider-image-4:checked ~ .wrapper .wrapper-holder{
+    transform: translateX(-300%);
+}
+
+.button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+}
+
