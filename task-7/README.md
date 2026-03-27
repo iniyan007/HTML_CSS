@@ -69,6 +69,7 @@ The slider supports:
   ```css
   border-radius: 50%;
   ```
+
 * Positioned centrally using:
 
   ```css
