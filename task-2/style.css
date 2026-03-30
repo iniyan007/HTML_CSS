@@ -140,3 +140,21 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__container {
+    grid-template-columns: 1fr;
+    margin-left: 55px;
+  }
+
+  .card__img {
+    width: 80%;
+  }
+}
