@@ -1,3 +1,9 @@
+:root {
+  --h2-font-size: 16px;
+  --title-color: #333;
+  --small-font-size: 12px;
+  --first-color: #d4bc20;
+}
 *{
     margin: 0;
     padding: 0;
